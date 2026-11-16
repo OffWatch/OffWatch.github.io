@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# {{ site.title }}
+# OffWatch
 
 Merchant mariner (Chief Mate / Master track) learning C++, systems programming, and ML inference.
 
