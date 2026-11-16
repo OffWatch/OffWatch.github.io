@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OffWatch — C++, Systems &amp; ML Log</title>
+  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <style>
     body {
       max-width: 72ch;
@@ -14,27 +14,27 @@
       background: #fafafa;
     }
     a { color: #0645ad; }
-    h1, h2 { font-size: 1.15rem; margin-top: 2rem; }
+    h1, h2, h3 { font-size: 1.15rem; margin-top: 1.8rem; }
     hr { border: 0; border-top: 1px solid #ccc; margin: 1.5rem 0; }
     ul { padding-left: 1.2rem; }
+    pre, code {
+      font-family: inherit;
+      background: #f0f0f0;
+    }
+    pre {
+      padding: 0.8rem 1rem;
+      overflow-x: auto;
+      border: 1px solid #ddd;
+    }
+    code { padding: 0.1rem 0.25rem; }
+    pre code { padding: 0; background: none; }
     .meta { color: #555; font-size: 0.9rem; }
+    nav { margin-bottom: 1.5rem; }
   </style>
 </head>
 <body>
-  <h1>OffWatch</h1>
-  <p class="meta">Merchant mariner (Chief Mate / Master track) learning C++, systems programming, and ML inference.</p>
-  <hr>
-
-  <h2>Projects</h2>
-  <ul>
-    <li><em>Coming soon — C++ systems &amp; ML projects will be linked here.</em></li>
-  </ul>
-
-  <h2>Log / Posts</h2>
-  <ul>
-    <li><em>No posts yet.</em></li>
-  </ul>
-
+  <nav><a href="{{ '/' | relative_url }}">{{ site.title }}</a></nav>
+  {{ content }}
   <hr>
   <p class="meta"><a href="https://github.com/OffWatch">github.com/OffWatch</a></p>
 </body>
