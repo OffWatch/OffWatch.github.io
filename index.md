@@ -3,13 +3,13 @@ layout: default
 ---
 # OffWatch
 
-Merchant mariner (Chief Mate / Master track) learning C++, systems programming, and ML inference.
+Mariner learning C++, systems programming, and ML inference.
 
 ---
 
 ## Projects
 
-- *Coming soon — C++ systems &amp; ML projects will be linked here.*
+- Started 06/11/2026 Currently learning basics of C++ from learncpp.com. 
 
 ## Posts
 
