@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: OffWatch/OffWatch.github.io
+  branch: main
+  commit_messages:
+    create: "New post: {{slug}}"
+    update: "Edit post: {{slug}}"
+    delete: "Delete post: {{slug}}"
+
+site_url: https://offwatch.github.io
+media_folder: assets/images
+public_folder: /assets/images
+
+collections:
+  - name: posts
+    label: Posts
+    label_singular: Post
+    folder: _posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: layout, label: Layout, widget: hidden, default: post }
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, time_format: false, format: "YYYY-MM-DD" }
+      - { name: body, label: Post, widget: markdown }

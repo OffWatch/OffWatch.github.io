@@ -4,3 +4,4 @@ url: "https://offwatch.github.io"
 markdown: kramdown
 highlighter: rouge
 permalink: /posts/:year-:month-:day-:title/
+exclude: [README.md]
